@@ -1,0 +1,15 @@
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/css/App.css ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Almarai&family=IBM+Plex+Sans&family=Poppins:wght@700&family=Raleway:ital,wght@0,300;1,500&family=Roboto:wght@700&family=Teko:wght@300&display=swap);
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/css/App.css (1) ***!
+  \*************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Almarai", sans-serif;
+  background-color: yellow;
+  color: black;
+}
