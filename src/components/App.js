@@ -1,10 +1,28 @@
 import React from "react";
 import './css/App.css';
+import { HashRouter } from "react-router-dom";
+import Router from './Router';
+import Header from './layout/Header';
+import Footer from './layout/Footer';
+import SideNavBar from "./layout/SideNavBar";
 
 function App() {
 
     return (
-        <h1>Servidor react numero 2</h1>
+
+        <HashRouter>
+            <Header />
+
+            <SideNavBar>
+
+                <Router />
+
+            </SideNavBar>
+
+            <Footer />
+
+        </HashRouter>
+
     )
 }
 
