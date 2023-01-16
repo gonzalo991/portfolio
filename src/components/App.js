@@ -5,24 +5,26 @@ import Router from './Router';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import SideNavBar from "./layout/SideNavBar";
+import Particles from "./Particles";
 
 function App() {
 
     return (
+        <>
+            <HashRouter>
+                <Header />
+                <SideNavBar>
 
-        <HashRouter>
-            <Header />
+                    <Router />
 
-            <SideNavBar>
+                </SideNavBar>
 
-                <Router />
+                <Footer />
 
-            </SideNavBar>
+            </HashRouter>
+            <Particles />
 
-            <Footer />
-
-        </HashRouter>
-
+        </>
     )
 }
 

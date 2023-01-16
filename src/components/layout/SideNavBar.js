@@ -65,7 +65,7 @@ function SideNavBar({children}) {
                 {
                     MENU_ITEMS.map((item, index) => {
                         return (
-                            <NavLink to = {item.path} key = {index} className="link" activeClassName="active">
+                            <NavLink to = {item.path} key = {index} className="link" activeclassname="active">
                                 <div className="icon">{item.icon}</div>
                                 <div className="link_text" style={{ display: isOpen ? "block" : "none" }}>{item.name}</div>
                             </NavLink>

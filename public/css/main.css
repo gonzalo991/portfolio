@@ -20,11 +20,12 @@
 
 main {
   height: 100vh;
-  margin-left: 30px;
+  width: 100vw;
+  background-color: #000;
 }
 
 .sidebar {
-  background-color: #000;
+  background-color: rgb(38, 37, 37);
   color: #fff;
   height: 100vh;
   width: 250px;
@@ -48,7 +49,7 @@ main {
 }
 
 .closeBar:hover {
-  background-color: lightskyblue;
+  background-color: #0de622;
   color: #000;
   border-radius: 2px;
   cursor: pointer;
@@ -64,13 +65,13 @@ main {
 }
 
 .link:hover {
-  background-color: lightskyblue;
+  background-color: #0de622;
   color: #000;
   transition: ease 0.8s;
 }
 
 .active {
-  background-color: lightskyblue;
+  background-color: #0de622;
   color: #000;
 }
 
