@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RiCodeBoxFill } from 'react-icons/ri';
-import { FaHome, FaRegUserCircle, FaHiking, FaBars } from 'react-icons/fa';
+import { FaHome, FaRegUserCircle, FaBars } from 'react-icons/fa';
 import { DiReact } from "react-icons/di";
 import { NavLink } from "react-router-dom";
 
@@ -27,11 +27,6 @@ function SideNavBar({children}) {
             path: "/Proyects",
             name: "Proyects",
             icon: <RiCodeBoxFill />
-        },
-        {
-            path: "/AboutMe",
-            name: "About Me",
-            icon: <FaHiking />
         },
         {
             path: "/Contact",

@@ -13,7 +13,7 @@
   text-decoration: none;
 }
 
-/* SideNav Bar*/
+/* ------------------------------------ SideNav Bar*/
 .sidenav_container {
   display: flex;
 }
@@ -83,7 +83,7 @@ main {
   font-size: 2.5rem;
 }
 
-/* Home */
+/*--------------------------------------- Home */
 .home_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -182,6 +182,21 @@ main {
   border-radius: 10px;
 }
 
+.home_icons {
+  margin-left: 190px;
+  padding-left: 100px;
+  font-size: 1.9rem;
+}
+
+.home_icons a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.home_icons a:hover {
+  color: #0de622;
+}
+
 @keyframes button1 {
   0% {
     transform: translate(-100%);
@@ -213,4 +228,262 @@ main {
   100% {
     transform: translateY(-100%);
   }
+}
+/*---------------------------------- Technologies */
+.technologies_title {
+  margin: 100px;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.technologies_subtitle {
+  margin: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.technologies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.technologies img {
+  height: 40px;
+  width: 40px;
+}
+
+.frontend_logos {
+  margin: 20px;
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.backend_logos {
+  margin: 20px;
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.databases_logos {
+  margin: 20px;
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.methodologies_logos {
+  margin: 20px;
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logo_img {
+  height: 45px;
+  width: 45px;
+  margin: 30px 20px;
+  padding-left: 3px;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  color: #000;
+  background: #0de622;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+.technologies .logo_img span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.15rem;
+  background: linear-gradient(to right, #333, #0de622);
+  animation: linea1 2s linear infinite;
+}
+
+.technologies .logo_img span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0.15rem;
+  background: linear-gradient(to bottom, #333, #0de622);
+  animation: linea2 2s linear infinite;
+}
+
+.technologies .logo_img span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 0.15rem;
+  background: linear-gradient(to left, #333, #0de622);
+  animation: linea3 2s linear infinite;
+}
+
+.technologies .logo_img span:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0.15rem;
+  background: linear-gradient(to top, #333, #0de622);
+  animation: linea4 2s linear infinite;
+}
+
+@keyframes linea1 {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(100%);
+  }
+}
+@keyframes linea2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes linea3 {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+@keyframes linea4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+/*--------------------------------- Proyects */
+.proyects {
+  --colorTexto: #fff;
+  margin: 30px;
+  padding-left: 180px;
+  color: var(--colorTexto);
+}
+
+.proyects h1 {
+  padding-right: 210px;
+  text-align: center;
+}
+
+.proyects_body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.proyect_container .proyect_container_title {
+  margin: 25px;
+  text-decoration: underline;
+}
+
+.proyect_container img {
+  height: 200px;
+  width: 200px;
+}
+
+.proyect_container .proyect_info {
+  margin: 10px 50px;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 0.2fr);
+}
+
+.proyect_info a {
+  color: #fff;
+}
+
+.proyect_info a:hover {
+  color: #0de622;
+}
+
+/*------------------------------------ Contact */
+.contact {
+  --colorContact: #fff;
+  margin-top: 100px;
+  text-align: center;
+  color: var(--colorContact);
+}
+
+.contact_title {
+  margin: 40px;
+  padding-left: 30px;
+  text-decoration: underline;
+}
+
+.contact_form {
+  height: 60vh;
+  width: 60vw;
+  margin-left: 300px;
+  border: solid 3px #fff;
+  border-radius: 10px;
+}
+
+.contact_form .campos {
+  margin-left: 170px;
+  display: grid;
+  grid-template-columns: repeat(2, 0.3fr);
+}
+
+.campo input {
+  height: 25px;
+  width: 250px;
+}
+
+.contact_form .campos .campo {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+textarea {
+  margin-top: 20px;
+}
+
+.form_button {
+  height: 50px;
+  width: 100px;
+  margin: 20px 46%;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #0de622;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form_button:hover {
+  color: #000;
+  font-weight: 900;
+  background-color: #fff;
+  border: solid 4px #0de622;
+}
+
+.icons {
+  margin: 30px;
+  padding-left: 50px;
+  font-size: 1.9rem;
+}
+
+.icons a {
+  margin: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.icons a:hover {
+  color: #0de622;
 }
