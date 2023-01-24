@@ -38,9 +38,14 @@ main {
 }
 
 .logo {
+  display: block;
   text-align: center;
   font-size: 25px;
   margin-right: 20px;
+}
+
+.closedLogo {
+  display: none;
 }
 
 .bars {
@@ -114,11 +119,11 @@ main {
 .home_info .button_link {
   margin-top: 50px;
   padding-top: 8px;
-  height: 40px;
-  width: 150px;
+  height: 35px;
+  width: 130px;
   text-decoration: none;
   position: absolute;
-  top: 70%;
+  bottom: 10%;
   transform: translate(-50%, -50%);
   font-size: 1.2rem;
   color: #000;
@@ -249,48 +254,26 @@ main {
 }
 
 .technologies img {
-  height: 40px;
-  width: 40px;
+  height: 55px;
+  width: 55px;
 }
 
-.frontend_logos {
-  margin: 20px;
-  padding-left: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.backend_logos {
-  margin: 20px;
-  padding-left: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.databases_logos {
-  margin: 20px;
-  padding-left: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.methodologies_logos {
-  margin: 20px;
-  padding-left: 50px;
+.logos {
+  margin: 5px;
+  padding-left: 15px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .logo_img {
-  height: 45px;
-  width: 45px;
-  margin: 30px 20px;
-  padding-left: 3px;
+  height: 60px;
+  width: 60px;
+  margin: 20px 10px;
+  padding: 2px 3px;
   text-decoration: none;
   transform: translate(-50%, -50%);
   font-size: 1.2rem;
   color: #000;
-  background: #0de622;
   overflow: hidden;
   transition: 0.5s;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
@@ -486,4 +469,38 @@ textarea {
 
 .icons a:hover {
   color: #0de622;
+}
+
+@media (max-width: 768px) {
+  /* ----------------- Home */
+  .home_container {
+    display: block;
+  }
+  .home_info {
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+  }
+  .home_info h1 {
+    font-size: 1.8rem;
+  }
+  .home_info h2 {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+  .home_info h3 {
+    font-size: 1.2rem;
+    margin: 7px;
+  }
+  .home_info p {
+    font-size: 0.6rem;
+  }
+  .home_img {
+    margin: 10px;
+    padding-top: 5px;
+  }
+  .home_img img {
+    height: 280px;
+    width: 210px;
+  }
 }

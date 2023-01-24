@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { RiCodeBoxFill } from 'react-icons/ri';
-import { FaHome, FaRegUserCircle, FaBars } from 'react-icons/fa';
+import { FaHome, FaBars } from 'react-icons/fa';
 import { DiReact } from "react-icons/di";
 import { NavLink } from "react-router-dom";
+import MediaQuery from "react-responsive";
 
-function SideNavBar({children}) {
+function SideNavBar({ children }) {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -27,11 +28,6 @@ function SideNavBar({children}) {
             path: "/Proyects",
             name: "Proyects",
             icon: <RiCodeBoxFill />
-        },
-        {
-            path: "/Contact",
-            name: "Contact",
-            icon: <FaRegUserCircle />
         }
     ]
 
@@ -41,26 +37,32 @@ function SideNavBar({children}) {
             <div className="sidebar" style={{ width: isOpen ? "250px" : "50px", transition: "all 0.9s ease" }}>
 
                 <div className="top_section">
-                    {
-                        isOpen ?
-                            <>
-                                <h1 className="logo" style={{ display: isOpen ? "block" : "none" }}>AG</h1>
-                                <div style={{ marginLeft: isOpen ? "150px" : "0px" }} className="closeBar" onClick={handleToggle}>
-                                    X
+                    <MediaQuery minWidth={769}>
+                        {
+                            isOpen ?
+                                <>
+                                    <h1 className={isOpen ? "logo" : "closedLogo"} style={{ display: isOpen ? "block" : "none" }}>G</h1>
+                                    <div style={{ marginLeft: isOpen ? "150px" : "0px" }} className="closeBar" onClick={handleToggle}>
+                                        X
+                                    </div>
+                                </>
+                                :
+                                <div style={{ marginLeft: isOpen ? "120px" : "0px" }} className="bars">
+                                    <FaBars onClick={handleToggle} />
                                 </div>
-                            </>
-                            :
-                            <div style={{ marginLeft: isOpen ? "120px" : "0px" }} className="bars">
-                                <FaBars onClick={handleToggle} />
-                            </div>
+                        }
+                    </MediaQuery>
 
-                    }
+                    <>
+                        <h1 className="logo">G</h1>
+                    </>
+
                 </div>
 
                 {
                     MENU_ITEMS.map((item, index) => {
                         return (
-                            <NavLink to = {item.path} key = {index} className="link" activeclassname="active">
+                            <NavLink to={item.path} key={index} className="link" activeclassname="active">
                                 <div className="icon">{item.icon}</div>
                                 <div className="link_text" style={{ display: isOpen ? "block" : "none" }}>{item.name}</div>
                             </NavLink>

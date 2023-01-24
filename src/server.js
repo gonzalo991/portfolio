@@ -13,5 +13,4 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded({ extended: true }));
 
 
-
 app.listen(port, () => { console.log(`Servidor establecido en el puerto ${port}`) });

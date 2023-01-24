@@ -1,6 +1,104 @@
 import React from "react";
+import TechLogos from "../fragments/TechLogos";
 
 function Technologies() {
+
+    const FRONT_LOGOS = [
+        {
+            path: "img/html.png"
+        },
+        {
+            path: "img/css.png"
+        },
+        {
+            path: "img/javascript.png"
+        },
+        {
+            path: "img/angular.png"
+        },
+        {
+            path: "img/reactlogo.jpg"
+        },
+        {
+            path: "img/sass.png"
+        },
+        {
+            path: "img/tslogo.png"
+        },
+        {
+            path: "img/thymeleaf.png"
+        },
+        {
+            path: "img/jquerylogo.png"
+        },
+    ]
+
+    const BACK_LOGOS = [
+        {
+            path: "img/javalogo.png"
+        },
+        {
+            path: "img/nodejs-1-logo.png"
+        },
+        {
+            path: "img/php-1-logo.png"
+        },
+        {
+            path: "img/9-python.jpg"
+        },
+        {
+            path: "img/django-python-logo.png"
+        },
+        {
+            path: "img/laravel.png"
+        },
+        {
+            path: "img/springboot.png"
+        },
+        {
+            path: "img/angular.png"
+        },
+        {
+            path: "img/R_logo.svg.png"
+        },
+    ]
+
+    const DB_LOGOS = [
+        {
+            path: "img/mongo_logo.jpg"
+        },
+        {
+            path: "img/mysqllogo.png"
+        },
+        {
+            path: "img/postgresql-ar21.jpg"
+        },
+    ]
+
+    const METH_LOGOS = [
+        {
+            path: "img/scrumlogo.png"
+        },
+        {
+            path: "img/kanbanlogo.png"
+        },
+        {
+            path: "img/xp-2.png"
+        },
+        {
+            path: "img/Jira-new-logo.png"
+        },
+        {
+            path: "img/github-logo-vector.png"
+        },
+        {
+            path: "img/gitkraken.jpg"
+        },
+        {
+            path: "img/GitLab-logo.wine.png"
+        }
+    ]
+
     return (
         <>
             <h1 className="technologies_title" style={{ color: "#fff" }}>
@@ -12,227 +110,64 @@ function Technologies() {
 
                     <h2 className="technologies_subtitle">Front End Technologies</h2>
 
-                    <div className="frontend_logos">
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
+                    <div className="logos">
+                        {
+                            FRONT_LOGOS.map(url => {
+                                return (
+                                    <TechLogos logo_url={url.path} />
+                                )
+                            })
+                        }
                     </div>
+
                 </div>
 
                 <div className="technologies_backend">
 
                     <h2 className="technologies_subtitle">Back End Technologies</h2>
 
-                    <div className="backend_logos">
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
+                    <div className="logos">
+                        {
+                            BACK_LOGOS.map(url => {
+                                return (
+                                    <TechLogos logo_url={url.path} />
+                                )
+                            })
+                        }
                     </div>
+
                 </div>
 
                 <div className="technologies_databases">
 
                     <h2 className="technologies_subtitle">Data Bases</h2>
 
-                    <div className="databases_logos">
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
+                    <div className="logos">
+                        {
+                            DB_LOGOS.map(url => {
+                                return (
+                                    <TechLogos logo_url={url.path} />
+                                )
+                            })
+                        }
                     </div>
+
                 </div>
 
                 <div className="methodologies">
 
                     <h2 className="technologies_subtitle">Methodologies</h2>
 
-                    <div className="methodologies_logos">
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
-                        <div className="logo_img">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="https://img1.freepng.es/20180320/csq/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c83fd669f3.8573646215215350398782.jpg" alt="logo de tecnología frontend" />
-                        </div>
-
+                    <div className="logos">
+                        {
+                            METH_LOGOS.map(url => {
+                                return (
+                                    <TechLogos logo_url={url.path} />
+                                )
+                            })
+                        }
                     </div>
+
                 </div>
 
             </div>

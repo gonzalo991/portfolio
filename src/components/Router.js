@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './views/Home';
 import Technologies from './views/Technologies';
 import Proyects from './views/Proyects';
-import Contact from './views/Contact';
 import NotFound from "./views/NotFound";
 
 
@@ -14,7 +13,6 @@ function Router() {
             <Route exact path='/' element={<Home />} />
             <Route exact path='/Technologies' element={<Technologies />} />
             <Route exact path='/Proyects' element={<Proyects />} />
-            <Route exact path='/Contact' element={<Contact />} />
             <Route path='/*' element={<NotFound />} />
         </Routes>
     )

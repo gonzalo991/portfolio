@@ -1,6 +1,4 @@
 import React from "react";
-import { BsLinkedin } from 'react-icons/bs';
-import { FaGithub } from 'react-icons/fa';
 
 function Home() {
 
@@ -10,8 +8,8 @@ function Home() {
                 <div className="home_info">
                     <h1>Hi,</h1>
                     <h2>I'm Gonzalo</h2>
-                    <h3>Full Stack Developer</h3>
-                    <p>Front-End / Back-End</p>
+                    <h3>Full Stack Web Developer</h3>
+                    <p>Great ideas make wonderful solutions</p>
                     <a download className="button_link" href="documents/CvOscarGonzaloAraya.pdf">
                         <span></span>
                         <span></span>
