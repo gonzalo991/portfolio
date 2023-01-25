@@ -32,6 +32,7 @@ function SideNavBar({ children }) {
     ]
 
     return (
+
         <div className="sidenav_container">
 
             <div className="sidebar" style={{ width: isOpen ? "250px" : "50px", transition: "all 0.9s ease" }}>
@@ -70,8 +71,12 @@ function SideNavBar({ children }) {
                     })
                 }
             </div>
+
             <main>{children}</main>
-        </div>
+        </div >
+
+
+
     )
 }
 

@@ -24,7 +24,7 @@ const PartilesComponent = () => {
                 },
                 modes: {
                     push: {
-                        quantity: 10
+                        quantity: 5
                     },
                     repulse: {
                         distance: 100
@@ -38,10 +38,10 @@ const PartilesComponent = () => {
                 },
                 move: {
                     enable: true,
-                    speed: { min: 1, max: 3 }
+                    speed: { min: 0.5, max: 1 }
                 },
                 opacity: {
-                    value: { min: 0.3, max: 0.7 }
+                    value: { min: 0.3, max: 0.9 }
                 },
                 size: {
                     value: { min: 0.5, max: 3 }

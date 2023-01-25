@@ -3,6 +3,8 @@ import TechLogos from "../fragments/TechLogos";
 
 function Technologies() {
 
+    let counter = 0;
+
     const FRONT_LOGOS = [
         {
             path: "img/html.png"
@@ -56,9 +58,6 @@ function Technologies() {
             path: "img/springboot.png"
         },
         {
-            path: "img/angular.png"
-        },
-        {
             path: "img/R_logo.svg.png"
         },
     ]
@@ -101,71 +100,74 @@ function Technologies() {
 
     return (
         <>
-            <h1 className="technologies_title" style={{ color: "#fff" }}>
-                <span></span>Technologies i work with</h1>
+            <div className="tech_container">
+                <h1 className="technologies_title" style={{ color: "#fff" }}>
+                    <span></span>Technologies i work with</h1>
 
-            <div className="technologies">
+                <div className="technologies">
 
-                <div className="technologies_frontend">
+                    <div className="technologies_front">
 
-                    <h2 className="technologies_subtitle">Front End Technologies</h2>
+                        <h2 className="technologies_subtitle">Front End Technologies</h2>
 
-                    <div className="logos">
-                        {
-                            FRONT_LOGOS.map(url => {
-                                return (
-                                    <TechLogos logo_url={url.path} />
-                                )
-                            })
-                        }
+                        <div className="logos">
+                            {
+                                FRONT_LOGOS.map(url => {
+                                    return (
+                                        <TechLogos logo_url={url.path} key={counter++}/>
+                                    )
+                                })
+                            }
+                        </div>
+
                     </div>
 
-                </div>
+                    <div className="technologies_back">
 
-                <div className="technologies_backend">
+                        <h2 className="technologies_subtitle">Back End Technologies</h2>
 
-                    <h2 className="technologies_subtitle">Back End Technologies</h2>
+                        <div className="logos">
+                            {
+                                BACK_LOGOS.map(url => {
+                                    return (
+                                        <TechLogos logo_url={url.path} key={counter++}/>
+                                    )
+                                })
+                            }
+                        </div>
 
-                    <div className="logos">
-                        {
-                            BACK_LOGOS.map(url => {
-                                return (
-                                    <TechLogos logo_url={url.path} />
-                                )
-                            })
-                        }
                     </div>
 
-                </div>
+                    <div className="technologies_database">
 
-                <div className="technologies_databases">
+                        <h2 className="technologies_subtitle">Data Bases</h2>
 
-                    <h2 className="technologies_subtitle">Data Bases</h2>
+                        <div className="logos">
+                            {
+                                DB_LOGOS.map(url => {
+                                    return (
+                                        <TechLogos logo_url={url.path} key={counter++}/>
+                                    )
+                                })
+                            }
+                        </div>
 
-                    <div className="logos">
-                        {
-                            DB_LOGOS.map(url => {
-                                return (
-                                    <TechLogos logo_url={url.path} />
-                                )
-                            })
-                        }
                     </div>
 
-                </div>
+                    <div className="technologies_methodologies">
 
-                <div className="methodologies">
+                        <h2 className="technologies_subtitle">Methodologies</h2>
 
-                    <h2 className="technologies_subtitle">Methodologies</h2>
+                        <div className="logos">
+                            {
+                                METH_LOGOS.map(url => {
+                                    return (
+                                        <TechLogos logo_url={url.path} key={counter++}/>
+                                    )
+                                })
+                            }
+                        </div>
 
-                    <div className="logos">
-                        {
-                            METH_LOGOS.map(url => {
-                                return (
-                                    <TechLogos logo_url={url.path} />
-                                )
-                            })
-                        }
                     </div>
 
                 </div>

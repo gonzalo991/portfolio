@@ -3,69 +3,50 @@ import { FiChrome } from 'react-icons/fi';
 import { FaGithub } from 'react-icons/fa';
 
 function Proyects() {
+
+    let counter = 0;
+
+    const MY_PROYECTS = [
+        {
+            proyectName: "ISEP N°8232",
+            proyectImg: "img/logoisep.png",
+            proyectLink: "",
+            proyectGit: "https://github.com/gonzalo991/ISEP"
+        },
+        {
+            proyectName: "Reciclarg",
+            proyectImg: "img/reciclarg.png",
+            proyectLink: "https://reciclarg.onrender.com/",
+            proyectGit: "https://github.com/gonzalo991/hackathon2022-reciclarg"
+        },
+        {
+            proyectName: "Cinema Center",
+            proyectImg: "img/peliculas.jpg",
+            proyectLink: "",
+            proyectGit: "https://github.com/gonzalo991/ProyectoPeliculas"
+        }
+    ]
+
     return (
         <>
             <div className="proyects">
                 <h1 className="proyects_title">My Proyects</h1>
 
                 <div className="proyects_body">
-
-                    <div className="proyect_container">
-                        <h2 className="proyect_container_title">Proyect Name</h2>
-                        <img src="https://e7.pngegg.com/pngimages/945/441/png-clipart-web-development-cascading-style-sheets-html-logo-css3-storm-blue-angle.png" alt="Imagen de proyecto de Oscar Gonzalo Araya" />
-                        <div className="proyect_info">
-                            <a href="" target="_blank"><FiChrome /></a>
-                            <a href="https://react-icons.github.io/react-icons/search?q=github" target="_blank"><FaGithub /></a>
-                        </div>
-                    </div>
-
-                    <div className="proyect_container">
-                        <h2 className="proyect_container_title">Proyect Name</h2>
-                        <img src="https://e7.pngegg.com/pngimages/945/441/png-clipart-web-development-cascading-style-sheets-html-logo-css3-storm-blue-angle.png" alt="Imagen de proyecto de Oscar Gonzalo Araya" />
-                        <div className="proyect_info">
-                            <a href="" target="_blank"><FiChrome /></a>
-                            <a href="github.com" target="_blank"><FaGithub /></a>
-                        </div>
-                    </div>
-
-                    <div className="proyect_container">
-                        <h2 className="proyect_container_title">Proyect Name</h2>
-                        <img src="https://e7.pngegg.com/pngimages/945/441/png-clipart-web-development-cascading-style-sheets-html-logo-css3-storm-blue-angle.png" alt="Imagen de proyecto de Oscar Gonzalo Araya" />
-                        <div className="proyect_info">
-                            <a href="" target="_blank"><FiChrome /></a>
-                            <a href="github.com" target="_blank"><FaGithub /></a>
-                        </div>
-                    </div>
-
-                    <div className="proyect_container">
-                        <h2 className="proyect_container_title">Proyect Name</h2>
-                        <img src="https://e7.pngegg.com/pngimages/945/441/png-clipart-web-development-cascading-style-sheets-html-logo-css3-storm-blue-angle.png" alt="Imagen de proyecto de Oscar Gonzalo Araya" />
-                        <div className="proyect_info">
-                            <a href="" target="_blank"><FiChrome /></a>
-                            <a href="github.com" target="_blank"><FaGithub /></a>
-                        </div>
-                    </div>
-
-                    <div className="proyect_container">
-                        <h2 className="proyect_container_title">Proyect Name</h2>
-                        <img src="https://e7.pngegg.com/pngimages/945/441/png-clipart-web-development-cascading-style-sheets-html-logo-css3-storm-blue-angle.png" alt="Imagen de proyecto de Oscar Gonzalo Araya" />
-                        <div className="proyect_info">
-                            <a href="" target="_blank"><FiChrome /></a>
-                            <a href="github.com" target="_blank"><FaGithub /></a>
-                        </div>
-                    </div>
-
-                    <div className="proyect_container">
-                        <h2 className="proyect_container_title">Proyect Name</h2>
-                        <img src="https://e7.pngegg.com/pngimages/945/441/png-clipart-web-development-cascading-style-sheets-html-logo-css3-storm-blue-angle.png" alt="Imagen de proyecto de Oscar Gonzalo Araya" />
-                        <div className="proyect_info">
-                            <a href="" target="_blank"><FiChrome /></a>
-                            <a href="github.com" target="_blank"><FaGithub /></a>
-                        </div>
-                    </div>
-
-
-
+                    {
+                        MY_PROYECTS.map(info => {
+                            return (
+                                <div className="proyect_container" key={counter++}>
+                                    <h2 className="proyect_container_title">{info.proyectName}</h2>
+                                    <img src={info.proyectImg} alt="Imagen de proyecto de Oscar Gonzalo Araya" />
+                                    <div className="proyect_info">
+                                        <a href={info.proyectLink} target="_blank"><FiChrome /></a>
+                                        <a href={info.proyectGit} target="_blank"><FaGithub /></a>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </>

@@ -472,6 +472,9 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .sidebar {
+    width: 30px;
+  }
   /* ----------------- Home */
   .home_container {
     display: block;
@@ -502,5 +505,89 @@ textarea {
   .home_img img {
     height: 280px;
     width: 210px;
+  }
+  /* ------------------------- Technologies*/
+  .technologies_title {
+    margin: 5px;
+    padding-right: 15px;
+    font-size: 0.9rem;
+  }
+  .tech_container {
+    display: block;
+  }
+  .technologies {
+    display: block;
+  }
+  .technologies_subtitle {
+    margin-top: 68px;
+    padding-right: 10px;
+    font-size: 0.7rem;
+  }
+  .technologies_front {
+    margin-top: 5px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+  }
+  .technologies_front .technologies_subtitle {
+    margin-top: 10px;
+  }
+  .technologies_back {
+    margin-top: 2px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+  }
+  .technologies_database {
+    margin-top: 2px;
+    margin-left: 40px;
+    padding-bottom: 20px;
+  }
+  .technologies_methodologies {
+    margin-left: 40px;
+    padding-bottom: 30px;
+  }
+  .logos {
+    height: 30px;
+    width: 30px;
+  }
+  .logo_img {
+    height: 30px;
+    width: 30px;
+  }
+  .logo_img img {
+    height: 29px;
+    width: 29px;
+  }
+  /* -------------------------- Proyects */
+  .proyects {
+    margin: 30px;
+    padding-left: 50px;
+  }
+  .proyects h1 {
+    margin: 0px 5px;
+    padding-right: 70px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .proyects_body {
+    display: block;
+  }
+  .proyect_container .proyect_container_title {
+    margin: 20px;
+    padding-right: 50%;
+    font-size: 0.9rem;
+  }
+  .proyect_container img {
+    height: 60px;
+    width: 70px;
+    margin: 5px 10px;
+  }
+  .proyect_container .proyect_info {
+    margin: 15px 20px;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);
+  }
+  .proyect_info a:hover {
+    color: #0de622;
   }
 }
