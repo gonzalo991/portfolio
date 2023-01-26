@@ -522,7 +522,7 @@ textarea {
     color: #0de622;
 }
 
-@media(max-width: 768px) {
+@media(min-width: 280px) {
 
     .sidebar {
         width: 30px;
@@ -535,8 +535,8 @@ textarea {
     }
 
     .home_info {
-        margin-top: 30px;
-        padding: 15px;
+        margin-top: 2rem;
+        padding: 0.5rem;
         text-align: center;
     }
 
@@ -546,7 +546,7 @@ textarea {
 
     .home_info h2 {
         font-size: 1.5rem;
-        margin: 10px;
+        margin: 0.2rem;
     }
 
     .home_info h3 {
@@ -678,4 +678,172 @@ textarea {
     .proyect_info a:hover {
         color: #0de622;
     }
+}
+
+@media(min-width: 540px) {
+
+    /* ----------------- Home */
+
+    .home_container {
+        display: block;
+    }
+
+    .home_info {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .home_info h1 {
+        font-size: 1.8rem;
+    }
+
+    .home_info h2 {
+        font-size: 1.5rem;
+        margin: 0.2rem;
+    }
+
+    .home_info h3 {
+        font-size: 1.2rem;
+        margin: 7px;
+    }
+
+    .home_info p {
+        font-size: 0.8rem;
+    }
+
+    .home_img {
+        margin: 0.5rem 3rem;
+        padding-top: 0.1rem;
+    }
+
+    .home_img img {
+        height: 25rem;
+        width: 25rem;
+    }
+
+    /* ------------------------- Technologies*/
+
+    .technologies_title {
+        margin: 0.2rem;
+        padding-right: 0.1rem;
+        font-size: 1.2rem;
+    }
+
+    .tech_container {
+        display: block;
+    }
+
+    .technologies {
+        display: block;
+    }
+
+    .technologies_subtitle {
+        margin-top: 5rem;
+        padding-right: 0.1rem;
+        font-size: 0.9rem;
+    }
+
+    .technologies_front {
+        margin-top: 0.1rem;
+        padding-left: 2rem;
+        padding-bottom: 1.3rem;
+    }
+
+    .technologies_front .technologies_subtitle {
+        margin-top: 0.2rem;
+    }
+
+    .technologies_back {
+        margin-top: 0.1rem;
+        padding-left: 2rem;
+        padding-bottom: 1.3rem;
+    }
+
+    .technologies_database {
+        margin-top: 0.1rem;
+        padding-bottom: 1.3rem;
+    }
+
+    .technologies_methodologies {
+        margin-top: 0.1rem;
+        padding-bottom: 1.3rem;
+    }
+
+    .logos {
+        height: 30px;
+        width: 30px;
+
+        margin-left: 3rem;
+    }
+
+    .logo_img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .logo_img img {
+        height: 29px;
+        width: 29px;
+    }
+
+    /* -------------------------- Proyects */
+
+    .proyects {
+        margin: 0.8rem;
+        padding-left: 50px;
+
+    }
+
+    .proyects h1 {
+        margin-left: 0.1rem;
+        padding-right: 3.5rem;
+
+        text-align: center;
+        font-size: 1.2rem;
+
+    }
+
+    .proyects_body {
+        display: grid;
+        grid-template-columns: repeat(2,0.5fr);
+        grid-gap: 0.1rem;
+    }
+
+    .proyect_container {
+        margin: 0.2rem;
+        padding-right: 1rem;
+    }
+
+    .proyect_container .proyect_container_title {
+        margin: 0.8rem;
+        text-align: center;
+        padding-right: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .proyect_container img {
+        height: 120px;
+        width: 140px;
+
+        margin: 0.1rem 0.1rem 0rem 1rem;
+        padding: 0.5rem;
+    }
+
+    .proyect_container .proyect_info {
+        margin: 0.8rem 4rem;
+
+        font-size: 1.3rem;
+
+        display: grid;
+        grid-template-columns: repeat(2, .2fr);
+    }
+
+    .proyect_container .proyect_info a {
+        margin-right: 0.5rem;
+    }
+}
+
+@media(min-width: 920){
+
 }

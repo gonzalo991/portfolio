@@ -54,10 +54,6 @@ function SideNavBar({ children }) {
                         }
                     </MediaQuery>
 
-                    <>
-                        <h1 className="logo">G</h1>
-                    </>
-
                 </div>
 
                 {
