@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { RiCodeBoxFill } from 'react-icons/ri';
+import { RiCodeBoxFill, RiSendPlaneFill, RiAccountCircleFill } from 'react-icons/ri';
 import { FaHome, FaBars } from 'react-icons/fa';
 import { DiReact } from "react-icons/di";
 import { NavLink } from "react-router-dom";
@@ -28,6 +28,16 @@ function SideNavBar({ children }) {
             path: "/Proyects",
             name: "Proyects",
             icon: <RiCodeBoxFill />
+        },
+        {
+            path: "/About",
+            name: "About Me",
+            icon: <RiAccountCircleFill />
+        },
+        {
+            path: "/Contact",
+            name: "Contact",
+            icon: <RiSendPlaneFill />
         }
     ]
 

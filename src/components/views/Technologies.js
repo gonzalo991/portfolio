@@ -77,24 +77,12 @@ function Technologies() {
     const METH_LOGOS = [
         {
             path: "img/scrumlogo.png"
-        },
-        {
-            path: "img/kanbanlogo.png"
-        },
-        {
-            path: "img/xp-2.png"
-        },
+        },,
         {
             path: "img/Jira-new-logo.png"
         },
         {
             path: "img/github-logo-vector.png"
-        },
-        {
-            path: "img/gitkraken.jpg"
-        },
-        {
-            path: "img/GitLab-logo.wine.png"
         }
     ]
 
