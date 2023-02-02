@@ -49,12 +49,6 @@ function Technologies() {
             path: "img/9-python.jpg"
         },
         {
-            path: "img/django-python-logo.png"
-        },
-        {
-            path: "img/laravel.png"
-        },
-        {
             path: "img/springboot.png"
         },
         {

@@ -117,7 +117,7 @@ main {
     width: 130px;
     text-decoration: none;
     position: absolute;
-    bottom: 5%;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.2rem;
@@ -222,14 +222,18 @@ main {
 /*---------------------------------- Technologies */
 
 .technologies_title {
-    margin: 1rem;
+    margin: 0.5rem;
+    padding-right: 1.5rem;
+
+    text-align: center;
     font-size: 1.2rem;
     color: #fff;
 }
 
 
 .technologies_subtitle {
-    margin: 0.4rem;
+    margin: 1rem;
+    padding-right: 1.5rem;
 
     text-align: center;
     font-size: 0.8rem;
@@ -238,7 +242,11 @@ main {
 }
 
 .technologies {
-    display: block;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .technologies img {
@@ -247,10 +255,10 @@ main {
 }
 
 .logos {
-    margin: 0.5rem;
-    padding-left: 8vw;
     display: grid;
     grid-template-columns: repeat(3, 0.1fr);
+
+    margin: 1rem;
 }
 
 
@@ -259,7 +267,7 @@ main {
     width: 32px;
 
     margin: 0.02vh 0.4vw;
-    padding: 5px 3px;
+    padding: 2px 2px;
 
     text-decoration: none;
     transform: translate(-50%, -50%);
@@ -415,57 +423,71 @@ main {
 
 /*------------------------------------ Contact */
 
-/*
+
 .contact {
     --colorContact: #fff;
-    margin-top: 100px;
-    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1rem;
+    padding: 0.5rem;
 
     color: var(--colorContact);
 }
 
 .contact_title {
-    margin: 40px;
-    padding-left: 30px;
+    margin: 0.5rem;
+
+    font-size: 1.2rem;
     text-decoration: underline;
 }
 
 .contact_form {
-    height: 60vh;
-    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    margin-left: 300px;
+    height: 65vh;
+    width: 70vw;
+
+    margin: 1rem;
+    padding: 0.5rem 0 0 6vw;
 
     border: solid 3px #fff;
     border-radius: 10px;
 }
 
 .contact_form .campos {
-    margin-left: 170px;
-    display: grid;
-    grid-template-columns: repeat(2, .3fr);
-}
-
-.campo input {
-    height: 25px;
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact_form .campos .campo {
     display: flex;
     flex-direction: column;
+
+    height: 3.5vh;
+    width: 50vw;
+
     margin: 20px;
 }
 
 textarea {
-    margin-top: 20px;
+    height: 15vh;
+    width: 50vw;
+
+    margin: 1rem 1.3rem;
 }
 
 .form_button {
-    height: 50px;
+    height: 35px;
     width: 100px;
 
-    margin: 20px 46%;
+    margin: 0.5rem 1.2rem;
 
     font-size: 1.2rem;
     color: #fff;
@@ -485,8 +507,8 @@ textarea {
 }
 
 .icons {
-    margin: 30px;
-    padding-left: 50px;
+    margin: 1.5rem;
+    padding-left: 1vw;
 
     font-size: 1.9rem;
 }
@@ -498,7 +520,7 @@ textarea {
 
     color: #fff;
 }
-*/
+
 
 @media(min-width: 769px) {
     .sidenav_container {
