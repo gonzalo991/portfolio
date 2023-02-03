@@ -10,6 +10,11 @@ function Home() {
                     <h2>I'm Gonzalo</h2>
                     <h3>Full Stack Web Developer</h3>
                     <p>Great ideas make wonderful solutions</p>
+
+                    <div className="home_img">
+                        <img src="img/fotoportfolio.jpeg" height={"600px"} alt="Foto de Gonzalo Araya Full Stack Developer" />
+                    </div>
+
                     <a download className="button_link" href="documents/CvOscarGonzaloAraya.pdf">
                         <span></span>
                         <span></span>
@@ -17,9 +22,6 @@ function Home() {
                         <span></span>
                         Download Cv
                     </a>
-                </div>
-                <div className="home_img">
-                    <img src="img/fotoportfolio.jpeg" height={"600px"} alt="Foto de Gonzalo Araya Full Stack Developer" />
                 </div>
             </div>
         </>
