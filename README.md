@@ -1,2 +1,2 @@
 # portfolio
-This is my portfolia, it is developed with React and Node JS
+This is my portfolio, it is developed with React and Node JS
