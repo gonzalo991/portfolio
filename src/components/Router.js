@@ -1,9 +1,8 @@
 import React from "react";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route,Navigate } from 'react-router-dom';
 import Home from './views/Home';
 import Technologies from './views/Technologies';
 import Proyects from './views/Proyects';
-import NotFound from "./views/NotFound";
 import Contact from "./views/Contact";
 import AboutMe from './views/AboutMe';
 
@@ -15,7 +14,7 @@ function Router() {
             <Route exact path='/Proyects' element={<Proyects />} />
             <Route exact path='/About' element={<AboutMe />} />
             <Route exact path='/Contact' element={<Contact />} />
-            <Route path='/*' element={<NotFound />} />
+            <Route path='*' element={<Navigate to="/" />} />
         </Routes>
     )
 }

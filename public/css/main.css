@@ -13,6 +13,11 @@
   text-decoration: none;
 }
 
+/* ------------------------------------- Not Fount*/
+.notfound_container {
+  color: #fff;
+}
+
 /* ------------------------------------ SideNav Bar*/
 .sidenav_container {
   display: flex;
