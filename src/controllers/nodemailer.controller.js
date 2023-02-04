@@ -31,7 +31,7 @@ const SENDMAIL = (req, res) => {
         }else{
             console.log(`enviado: ID: ${info.messageId}`);
         }
-        res.json({status: '¡Mensaje Enviado con Éxito!'});
+        res.redirect('/')
     });
 }
 
