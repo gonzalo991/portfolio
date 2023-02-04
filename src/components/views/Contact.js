@@ -21,7 +21,7 @@ function Contact() {
 
                     </div>
 
-                    <textarea name="consulta" cols={30} rows={10} placeholder="Escriba su consulta aquí..."></textarea>
+                    <textarea name="mensaje" cols={30} rows={10} placeholder="Escriba su consulta aquí..."></textarea>
 
                     <button className="form_button" type="submit">Enviar</button>
 
