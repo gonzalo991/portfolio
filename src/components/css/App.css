@@ -97,6 +97,7 @@ main {
 
 .home_info h1 {
     padding-left: 0.5rem;
+    color: #E6220D;
     font-size: 1.5rem;
 }
 
@@ -106,8 +107,9 @@ main {
 }
 
 .home_info h3 {
-    font-size: 1rem;
     margin: 0.5rem;
+    font-size: 1rem;
+    color: #E6220D;
 }
 
 .home_info p {
@@ -123,7 +125,7 @@ main {
     text-decoration: none;
     position: absolute;
     bottom: 0;
-    left: 55%;
+    left: 52%;
     transform: translate(-50%, -50%);
     font-size: 1.2rem;
     color: #000;
@@ -177,6 +179,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0.5rem;
+    padding-top: 3rem;
 }
 
 .home_img img {
@@ -243,9 +247,10 @@ main {
     padding-right: 1.5rem;
 
     text-align: center;
+    text-decoration: underline;
     font-size: 0.8rem;
 
-    color: #fff;
+    color: #E6220D;
 }
 
 .technologies {
@@ -454,11 +459,11 @@ main {
     font-size: 1.1rem;
 }
 
-.about_description p{
+.about_description p {
     margin-top: 0.3rem;
 }
 
-.about_description p::first-letter{
+.about_description p::first-letter {
     margin-left: 0.8rem;
 }
 
@@ -629,13 +634,15 @@ textarea {
 
 
 @media(min-width: 769px) {
+
     .sidenav_container {
         display: flex;
     }
 
     .logo {
-        display: block;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 25px;
         margin-right: 20px;
     }
@@ -646,6 +653,8 @@ textarea {
 
     .bars {
         display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 30px;
     }
 
@@ -686,19 +695,18 @@ textarea {
 
     /*--------------------------------------- Home */
 
-    .home_container {
+    .home_info_container {
         display: grid;
-
         grid-template-columns: repeat(2, 1fr);
-        grid-column: 6span;
-        grid-gap: 1.5rem;
-
-        color: #fff;
     }
 
     .home_info {
-        margin-top: 8rem;
+        margin-top: 5rem;
         text-align: center;
+    }
+
+    .info_text {
+        margin-top: 8rem;
     }
 
     .home_info h1 {
@@ -715,21 +723,14 @@ textarea {
         margin: 0.2rem;
     }
 
+    .home_info p {
+        font-size: 1rem;
+    }
+
     .home_info .button_link {
-        margin-top: 2rem;
-        padding-top: 0.5rem;
-        height: 2.5rem;
-        width: 8rem;
-        text-decoration: none;
         position: absolute;
-        bottom: 10%;
-        transform: translate(-50%, -50%);
-        font-size: 1.2rem;
-        color: #000;
-        background: #0de622;
-        overflow: hidden;
-        transition: .5s;
-        box-shadow: 0 2rem 5rem rgba(0, 0, 0, .5);
+        left: 31%;
+        bottom: 15%;
     }
 
     .home_info .button_link:hover {
@@ -739,11 +740,12 @@ textarea {
     }
 
     .home_img {
-        margin-top: 8rem;
+        margin-top: 0.2rem;
+        padding-top: 0.5rem;
     }
 
     .home_img img {
-        height: 50vh;
+        height: 70vh;
         width: 40vw;
         border-radius: 10px;
     }
@@ -761,18 +763,18 @@ textarea {
 
 
     .technologies_subtitle {
-        margin: 1.3rem;
+        margin: 2rem;
+        padding-right: 9rem;
 
         font-size: 1.2rem;
         text-align: center;
 
-        color: #fff;
+        color: #E6220D;
     }
 
     .technologies {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
     }
 
     .technologies img {
@@ -856,23 +858,55 @@ textarea {
         color: #0de622;
     }
 
+    /*------------------------------------- About */
+
+    .about_container {
+        margin: 1rem;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_title {
+        font-size: 2.5rem;
+        color: #E6220D;
+    }
+
+    .about_subtitle {
+        font-size: 2rem;
+        color: #E6220D;
+    }
+
+    .about_description {
+        font-size: 1.6rem;
+    }
+
+
     /*------------------------------------ Contact */
 
     .contact {
-        --colorContact: #fff;
-        margin: 2rem;
-        text-align: center;
-
-        color: var(--colorContact);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: c;
     }
 
     .contact_title {
-        margin: 2.2rem;
-        padding-left: 1.8rem;
-        text-decoration: underline;
+        margin: 0.8rem;
+        padding-left: 8rem;
+
+        color: #E6220D;
+        font-size: 2rem;
     }
 
     .contact_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 70vh;
         width: 70vw;
 
@@ -883,29 +917,18 @@ textarea {
     }
 
     .contact_form .campos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
     }
 
     .contact_form .campo {
-        display: flex;
-        flex-direction: column;
-
         margin: 0.3rem;
         padding: 0.2rem;
-        justify-content: center;
     }
 
 
-    .campo input {
-        height: 4vh;
-        width: 28vw;
-    }
-
-    .contact_form .campos .campo {
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
+    .campo label {
+        text-align: center;
     }
 
     textarea {
@@ -916,7 +939,7 @@ textarea {
         height: 50px;
         width: 100px;
 
-        margin: 20px 46%;
+        margin: 20px 60%;
 
         font-size: 1.2rem;
         color: #fff;
@@ -936,8 +959,8 @@ textarea {
     }
 
     .icons {
-        margin: 30px;
-        padding-left: 50px;
+        margin: 2rem;
+        padding-left: 9rem;
 
         font-size: 1.9rem;
     }
@@ -951,6 +974,6 @@ textarea {
     }
 
     .icons a:hover {
-        color: #0de622;
+        color: #E6220D;
     }
 }

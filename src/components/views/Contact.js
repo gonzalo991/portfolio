@@ -28,8 +28,8 @@ function Contact() {
                 </form>
 
                 <div className="icons">
-                    <a href="" target="_blank"><BsLinkedin /></a>
-                    <a href="" target="_blank"><FaGithub /></a>
+                    <a href="https://www.linkedin.com/in/gonzalo-araya-416a6520b/" target="_blank"><BsLinkedin /></a>
+                    <a href="https://github.com/gonzalo991" target="_blank"><FaGithub /></a>
                 </div>
             </div>
         </>

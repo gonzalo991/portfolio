@@ -53,18 +53,21 @@ function AboutMe() {
                 <div className="about_skills">
 
                     <h2 className="about_subtitle">Skills</h2>
-                    {
-                        HABILITIES.map(hability => {
-                            return (
-                                <>
-                                    <div className="skills_description">
-                                        <h3 className="border">{hability.skill}</h3>
-                                        <h3 className="wavy">{hability.skill}</h3>
-                                    </div>
-                                </>
-                            )
-                        })
-                    }
+                   
+                    <div className="about_habilities">
+                        {
+                            HABILITIES.map(hability => {
+                                return (
+                                    <>
+                                        <div className="skills_description">
+                                            <h3 className="border">{hability.skill}</h3>
+                                            <h3 className="wavy">{hability.skill}</h3>
+                                        </div>
+                                    </>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
             </div>
         </>
